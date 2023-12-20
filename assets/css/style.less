@@ -21,6 +21,9 @@ h2 {
 .normal-text {
     font-family: var(--ff-quote);
 }
+.accent-text {
+    color: brown;
+}
 .bg-navigations {
     box-shadow: inset 5px 5px 10px #00141b,
         inset -5px -5px 10px #001a23;
@@ -243,7 +246,7 @@ h2 {
 .cards {
 	gap: 1.4rem;
     background-color: var(--prussian-blue);
-    padding: 1rem;
+    // padding: 1rem;
     border-radius: 0.2rem;
     background: #003459;
     box-shadow: inset 6px 6px 12px #001728,
@@ -267,30 +270,20 @@ h2 {
 		font-size: 1rem;
 		color: var(--rich-black);
 		line-height: 1.25;
-		& + * {
-			margin-top: 1rem;
-		}
 	}
 
 	.info {
         font-size: 0.725rem;
 		color: var(--rich-black);
-		& + * {
-			margin-top: 1.25rem;
-		}
 	}
 
 	.button {
-		font-size: 0.6rem;
 		line-height: 1;
 		background-color: var(--white);
 		border: 2px solid var(--tomato);
 		color: var(--tomato);
-		border-radius: 6px;
 		font-weight: 500;
-		display: inline-flex;
-		align-items: center;
-		justify-content: space-between;
+        border-radius: 0.4rem;
 		gap: 0.5rem;
 		&:hover,
 		&:focus {
